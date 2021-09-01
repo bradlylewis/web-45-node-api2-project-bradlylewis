@@ -114,7 +114,7 @@ router.put('/:id', (req, res) => {
             })
     }
 })
-router.get('/:id/messages', async (req, res) => {
+router.get('/:id/comments', async (req, res) => {
     try {
         const post = await Post.findById(req.params.id)
         if(!post) {
